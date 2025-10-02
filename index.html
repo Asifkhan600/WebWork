@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGlobal Finder - Worldwide University Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h1>EduGlobal Finder</h1>
+                </div>
+                <p class="tagline">Discover Universities & Colleges Worldwide</p>
+            </div>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <div class="search-header">
+                    <h2>Find Your Dream Institution</h2>
+                    <p>Search universities and colleges across the globe with comprehensive information</p>
+                </div>
+                
+                <div class="search-box">
+                    <div class="input-group">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="countryInput" placeholder="Enter country name (e.g., United States, Pakistan, Germany)">
+                    </div>
+                    <button id="searchBtn" class="search-button">
+                        <i class="fas fa-search"></i>
+                        Search Institutions
+                    </button>
+                </div>
+
+                <div class="quick-countries">
+                    <span>Quick search:</span>
+                    <div class="country-tags">
+                        <button class="country-tag" data-country="United States">USA</button>
+                        <button class="country-tag" data-country="United Kingdom">UK</button>
+                        <button class="country-tag" data-country="Canada">Canada</button>
+                        <button class="country-tag" data-country="Australia">Australia</button>
+                        <button class="country-tag" data-country="Germany">Germany</button>
+                        <button class="country-tag" data-country="Pakistan">Pakistan</button>
+                        <button class="country-tag" data-country="India">India</button>
+                        <button class="country-tag" data-country="China">China</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filters Section -->
+        <section class="filters-section" id="filtersSection" style="display: none;">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="provinceFilter"><i class="fas fa-map-marker-alt"></i> Filter by Region:</label>
+                    <select id="provinceFilter">
+                        <option value="">All Regions/States</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="typeFilter"><i class="fas fa-university"></i> Filter by Type:</label>
+                    <select id="typeFilter">
+                        <option value="">All Types</option>
+                        <option value="University">University</option>
+                        <option value="College">Colleges</option>
+                        <option value="Institute">Institute</option>
+                    </select>
+                </div>
+                <button id="resetBtn" class="reset-button">
+                    <i class="fas fa-redo"></i>
+                    Reset Filters
+                </button>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section">
+            <div class="loading" id="loading">
+                <div class="spinner-container">
+                    <div class="spinner"></div>
+                    <p>Searching universities worldwide...</p>
+                </div>
+            </div>
+            
+            <div class="results-header" id="resultsHeader" style="display: none;">
+                <div class="results-info">
+                    <h2 id="resultsTitle">Universities in <span id="countryName"></span></h2>
+                    <div class="results-stats">
+                        <span class="count-badge" id="collegeCount">0</span>
+                        <span>institutions found</span>
+                    </div>
+                </div>
+                <div class="export-options">
+                    <button class="export-btn" id="exportBtn">
+                        <i class="fas fa-download"></i>
+                        Export Results
+                    </button>
+                </div>
+            </div>
+
+            <div class="colleges-container" id="collegesContainer">
+                <div class="welcome-state" id="welcomeState">
+                    <div class="welcome-content">
+                        <i class="fas fa-globe-americas"></i>
+                        <h3>Explore Global Education</h3>
+                        <p>Enter a country name or click on quick search buttons to discover universities and colleges worldwide.</p>
+                        <div class="features">
+                            <div class="feature">
+                                <i class="fas fa-database"></i>
+                                <span>Real-time data from global sources</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-filter"></i>
+                                <span>Advanced filtering options</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <span>Regional information included</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-content">
+                    <i class="fas fa-search"></i>
+                    <h3>No Institutions Found</h3>
+                    <p>We couldn't find any universities or colleges for your search. Try these suggestions:</p>
+                    <ul>
+                        <li>Check the spelling of the country name</li>
+                        <li>Try using the English name of the country</li>
+                        <li>Use the quick search buttons above</li>
+                        <li>Try a different country name</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>EduGlobal Finder</span>
+                    </div>
+                    <p>Comprehensive global university database powered by multiple educational APIs</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">About</a>
+                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="#" class="footer-link">Terms</a>
+                    <a href="#" class="footer-link">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduGlobal Finder. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
