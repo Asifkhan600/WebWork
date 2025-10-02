@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Calculator Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Section -->
+        <div class="login-section" id="loginSection">
+            <div class="login-container">
+                <div class="login-header">
+                    <i class="fas fa-lock"></i>
+                    <h1>Secure Calculator Pro</h1>
+                    <p>Enter password to access the calculator</p>
+                </div>
+                
+                <div class="password-input">
+                    <div class="input-group">
+                        <i class="fas fa-key"></i>
+                        <input type="password" id="passwordInput" placeholder="Enter your password">
+                        <button id="togglePassword">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="password-strength">
+                        <div class="strength-bar"></div>
+                    </div>
+                </div>
+                
+                <button class="login-btn" id="loginBtn">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Unlock Calculator
+                </button>
+                
+                <div class="login-footer">
+                    <p>Default password: <code>asifak</code></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calculator Section -->
+        <div class="calculator-section" id="calculatorSection" style="display: none;">
+            <div class="calculator-container">
+                <!-- Header -->
+                <div class="calc-header">
+                    <div class="header-left">
+                        <i class="fas fa-calculator"></i>
+                        <h1>Calculator Pro</h1>
+                    </div>
+                    <button class="logout-btn" id="logoutBtn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </button>
+                </div>
+
+                <!-- Display -->
+                <div class="display-container">
+                    <div class="display" id="display">0</div>
+                    <div class="operation-display" id="operationDisplay"></div>
+                </div>
+
+                <!-- Controls -->
+                <div class="controls">
+                    <div class="control-buttons">
+                        <button class="control-btn clear" id="clearBtn">
+                            <i class="fas fa-broom"></i>
+                            Clear
+                        </button>
+                        <button class="control-btn history" id="historyBtn">
+                            <i class="fas fa-history"></i>
+                            History
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Keypad -->
+                <div class="keypad">
+                    <div class="row">
+                        <button class="btn number" data-value="7">7</button>
+                        <button class="btn number" data-value="8">8</button>
+                        <button class="btn number" data-value="9">9</button>
+                        <button class="btn operator divide" data-operator="/">
+                            <i class="fas fa-divide"></i>
+                        </button>
+                    </div>
+                    <div class="row">
+                        <button class="btn number" data-value="4">4</button>
+                        <button class="btn number" data-value="5">5</button>
+                        <button class="btn number" data-value="6">6</button>
+                        <button class="btn operator multiply" data-operator="*">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="row">
+                        <button class="btn number" data-value="1">1</button>
+                        <button class="btn number" data-value="2">2</button>
+                        <button class="btn number" data-value="3">3</button>
+                        <button class="btn operator subtract" data-operator="-">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                    <div class="row">
+                        <button class="btn number zero" data-value="0">0</button>
+                        <button class="btn decimal" data-value=".">.</button>
+                        <button class="btn operator add" data-operator="+">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <button class="btn equals" id="equalsBtn">
+                            <i class="fas fa-equals"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- History Panel -->
+                <div class="history-panel" id="historyPanel">
+                    <div class="history-header">
+                        <h3>Calculation History</h3>
+                        <button class="close-history" id="closeHistory">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="history-list" id="historyList">
+                        <!-- History items will be added here -->
+                    </div>
+                    <button class="clear-history" id="clearHistory">
+                        <i class="fas fa-trash"></i>
+                        Clear History
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notification -->
+        <div class="notification" id="notification">
+            <span id="notificationText"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
