@@ -1,6 +1,6 @@
 
 
-💻 **AI Enthusiast | Web Developer | Animator | C++ Explorer**  
+💻 **AI Enthusiast | Web Developer | C++ Explorer** | Python 
 ✨ Turning ideas into code, experiments into projects, and creativity into animations 🎨  
 🚀 Passionate about building **smart AI solutions**, **dynamic websites**, and **eye-catching animations**.  
 
@@ -24,10 +24,6 @@
 - PHP ![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat&logo=php&logoColor=white)
 - MySQL ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 
-**Animation & Design**
-- Blender ![Blender](https://img.shields.io/badge/-Blender-F5792A?style=flat&logo=blender&logoColor=white)
-- After Effects ![After Effects](https://img.shields.io/badge/-After%20Effects-999999?style=flat&logo=adobeaftereffects&logoColor=white)
-
 ---
 
 ## 📂 Featured Projects
@@ -36,23 +32,16 @@
 |---------|-------------|------------|---------|
 | **FitLife Website** | Professional fitness website | HTML, CSS, PHP | ![FitLife GIF](https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif) |
 | **AI Handwriting Classifier** | Binary digit classifier using ML | Python, TensorFlow | ![ML GIF](https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif) |
-| **Animation Demo** | Short animated film | Blender, After Effects | ![Animation GIF](https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif) |
 | **Web App CRUD** | Login & Signup dashboard | PHP, MySQL, HTML/CSS | ![WebApp GIF](https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif) |
 
 ---
-
-## 📊 GitHub Stats
-
-![Muhammad Asif Khan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=your-github-username&show_icons=true&theme=radical)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=your-github-username&layout=compact&theme=radical)
-
 ---
 
 ## 📫 Connect with Me
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/your-linkedin)  
 [![Portfolio](https://img.shields.io/badge/-Portfolio-1DA1F2?style=flat&logo=google-chrome&logoColor=white)](https://your-portfolio-link.com)  
-[![Email](https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:your-email@example.com)
+[![Email](eng.asifkhan.uom@gmail.com)
 
 ---
 
